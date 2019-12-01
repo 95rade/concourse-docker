@@ -11,6 +11,24 @@ docker run concourse/concourse --help
 docker run concourse/concourse web --help
 docker run concourse/concourse worker --help
 ```
+Usage
+Quick-start
+See the Quick-start folder.
+
+Generate private keys
+Run generate-keys.sh to create keys to be used by the web host and workers.
+
+Environment variables
+CONCOURSE_EXTERNAL_URL - The URL to access concourse web at. Usually http://192.168.99.100:8080 or http://localhost:8080
+CONCOURSE_LOGIN - Username to use for concourse basic auth.
+CONCOURSE_PASSWORD = Password to use for concourse basic auth.
+Start Concourse
+Run:
+
+docker-compose up
+Open the CONCOURSE_EXTERNAL_URL specified above (http://192.168.99.100:8080) and start using concourse.
+
+See Using Concourse to get started.
 
 See [the `concourse` binary docs](https://concourse-ci.org/install.html) for
 more information - the instructions and requirements are the same. For network
